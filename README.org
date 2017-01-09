@@ -1,0 +1,16 @@
+* Overview
+
+Program to play arbitrary waveforms on an Arduino.
+
+The Arduino needs to have sufficient flash memory, the program was
+tested on an ArduinoMega2560 (Atmega2560).
+
+* Instructions
+
+Add your data as comma separated C array construction lists, see the
+examples in the =data/= directory.
+
+* Known issues
+
+- Increasing the amount of data further will decrease the speed of the
+  PWM, the explicit speed setting seems to be ignored.
