@@ -60,18 +60,11 @@ const unsigned char data15[] PROGMEM = {
   #include "data/data15.h"
 };
 
-const unsigned long data[] = {
-  (const unsigned long)data0,  (const unsigned long)data1,
-  (const unsigned long)data2,  (const unsigned long)data3,
-  (const unsigned long)data4,  (const unsigned long)data5,
-  (const unsigned long)data6,  (const unsigned long)data7,
-  (const unsigned long)data8,  (const unsigned long)data9,
-  (const unsigned long)data10, (const unsigned long)data11,
-  (const unsigned long)data12, (const unsigned long)data13,
-  (const unsigned long)data14, (const unsigned long)data15,
-};
+// we need to use "pgm_get_far_address" to convert the numbers to
+// addresses in the larger progmem address space.
+uint32_t data[16];
 
-const size_t data_lengths[16] = {
+const uint32_t data_lengths[16] = {
    sizeof(data0),  sizeof(data1),  sizeof(data2),  sizeof(data3),
    sizeof(data4),  sizeof(data5),  sizeof(data6),  sizeof(data7),
    sizeof(data8),  sizeof(data9), sizeof(data10), sizeof(data11),
