@@ -11,7 +11,7 @@ const float framerates[16] = {
 
 // 256kB / 16 = 16kB
 const unsigned char data0[] PROGMEM = {
-  #include "data/data1.h"
+  #include "data/data0.h"
   //3, 1, 4, 1, 5, 9, 2, 6, 5, 8, 9, 7, 9
 };
 const unsigned char data1[] PROGMEM = {
