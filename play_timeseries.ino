@@ -36,7 +36,7 @@ void init_data() {
   data[5] = pgm_get_far_address(data5);
   data[6] = pgm_get_far_address(data6);
   data[7] = pgm_get_far_address(data7);
-  data[8] = pgm_get_far_address(data8);
+//  data[8] = pgm_get_far_address(data8);
 //  data[9] = pgm_get_far_address(data9);
 //  data[10] = pgm_get_far_address(data10);
 //  data[11] = pgm_get_far_address(data11);
